@@ -33,7 +33,7 @@ resource "aws_launch_configuration" "dckr_web" {
   key_name = "${aws_key_pair.docker.key_name}"
   user_data_base64            = "${base64encode(local.dckr-node-userdata)}"
   ebs_block_device {
-    device_name = "/data01"
+    device_name = "/dev/sdg"
     volume_type = "gp2"
     volume_size = 100
     delete_on_termination = true
