@@ -1,0 +1,7 @@
+*.tfvars
+*.terraform
+*.tfstate
+terraform.tf
+mykey.pub
+mykey.pem
+backend_config
